@@ -6,7 +6,7 @@ const App = () => {
 
     const genPassword = async () => {
         try {
-            const response = await fetch('http://localhost:3000/generateRandomPassword');
+            const response = await fetch('https://node4password-generator.vercel.app/generateRandomPassword');
             const data = await response.json();
             if (data.password) {
                 setPassword(data.password);
